@@ -1,0 +1,52 @@
+#root {
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0; /* Elimina el relleno */
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  background-image: url('back.jpg');
+  background-size: 100% 100%; /* Ajusta el tamaño para cubrir toda la pantalla */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main {
+  background: transparent;
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s linear infinite;
+  color: greenyellow;
+  display: flex;
+  flex-direction: row; /* Asegura que los elementos estén en una columna */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 100vh; /* Utiliza height en lugar de min-height para ocupar toda la altura de la ventana */
+  margin: 0; /* Elimina cualquier margen predeterminado */
+}
+
+
+main h1 {
+  color: aquamarine; 
+  font-size: 20px;
+}
+
+body {
+  background: white;
+  background-size: 200% 200%;
+  margin: 0;
+  animation: gradientAnimation 5s linear infinite;
+  color: ablack;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
